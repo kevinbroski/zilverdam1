@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Status - Zilverdam RP</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Zilverdam Roleplay Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">APV</a></li>
+            <li><a href="status.html">Server Status</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="status-page">
+        <h2>>>>>>>>>>>>>>>>></h2>
+        <p id="status-text">🔄 Laden...</p>
+
+        <h3>📊 Server Uptime</h3>
+        <canvas id="serverChart"></canvas> <!-- Server Status Grafiek -->
+
+        <h3>🔹 Laatste Updates</h3>
+        <ul id="changelog">
+            <li>🔹 Update 1.2: Nieuwe voertuigen toegevoegd</li>
+            <li>🔹 Server optimalisaties voor minder lag</li>
+        </ul>
+
+        <h3>❌ Error Logs</h3>
+        <ul id="errorlog">
+            <li>⚠️ 16-03-2024: Kleine server crash door script X</li>
+            <li>⚠️ 15-03-2024: Database timeout error opgelost</li>
+        </ul>
+
+        <h3>🐞 Bug Melden</h3>
+        <form>
+            <label for="bug">Bug Beschrijving:</label>
+            <textarea id="bug" required></textarea>
+            <button type="submit">Verstuur</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Zilverdam Roleplay | Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Grafiek JS -->
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Roleplay - APV</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Sky Roleplay Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">APV</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="apv-container">
+        <!-- Sidebar met klikbare regels -->
+        <aside class="apv-sidebar">
+            <h3>APV - Regels</h3>
+            <ul>
+                <li><a href="#" onclick="showRule('strafbepaling')">⚖️ Strafbepaling</a></li>
+                <li><a href="#" onclick="showRule('failrp')">🎭 Artikel 1 - Fail-RP & Powergaming</a></li>
+                <li><a href="#" onclick="showRule('rdmvdm')">🔫 Artikel 2 - RDM & VDM</a></li>
+                <li><a href="#" onclick="showRule('metagaming')">🧠 Artikel 3 - Metagaming</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content gebied waar regels verschijnen -->
+        <main class="apv-content">
+            <div id="strafbepaling" class="apv-rule active">
+                <h2>⚖️ Strafbepaling</h2>
+                <p>De straffen zijn verdeeld in de volgende categorieën:</p>
+                <ul>
+                    <li><strong>Categorie 1:</strong> Waarschuwing</li>
+                    <li><strong>Categorie 2:</strong> Ban van 1 dag + 20 uur taakstraf</li>
+                    <li><strong>Categorie 3:</strong> Ban 2 dagen + 25 uur taakstraf</li>
+                    <li><strong>Categorie 4:</strong> Ban 3 dagen + 30 uur taakstraf</li>
+                    <li><strong>Categorie 5:</strong> Ban 1 week + 50 uur taakstraf</li>
+                    <li><strong>Categorie 6:</strong> Ban 1 maand</li>
+                    <li><strong>Categorie 7:</strong> Permanente ban</li>
+                    <li><strong>Categorie 8:</strong> Account wipe</li>
+                </ul>
+            </div>
+
+            <div id="failrp" class="apv-rule">
+                <h2>🎭 Artikel 1 - Fail-RP & Powergaming</h2>
+                <p>FailRP betekent dat je een roleplay situatie verstoort of niet realistisch speelt.</p>
+                <ul>
+                    <li>Je voertuig in de garage zetten om herkenning te vermijden tijdens een achtervolging.</li>
+                    <li>Opzettelijk een scenario verpesten of overheidsmedewerkers hinderen.</li>
+                    <li>Items stelen op een onrealistische manier (bijv. bij de garage of uit kofferbakken).</li>
+                    <li>Niet reageren op verwondingen zoals schoten of zware crashes.</li>
+                </ul>
+            </div>
+
+            <div id="rdmvdm" class="apv-rule">
+                <h2>🔫 Artikel 2 - RDM & VDM</h2>
+                <p>Random Deathmatch (RDM) en Vehicle Deathmatch (VDM) zijn niet toegestaan.</p>
+                <ul>
+                    <li>Je mag niet zomaar iemand vermoorden zonder geldige RP reden.</li>
+                    <li>Je mag geen voertuigen als wapens gebruiken om iemand opzettelijk aan te rijden.</li>
+                </ul>
+            </div>
+
+            <div id="metagaming" class="apv-rule">
+                <h2>🧠 Artikel 3 - Metagaming</h2>
+                <p>Metagaming betekent dat je kennis gebruikt die je in OOC (Out Of Character) hebt verkregen.</p>
+                <ul>
+                    <li>Je mag geen Discord-informatie gebruiken in-game.</li>
+                    <li>Je mag niet streamsnipen of OOC-info gebruiken om RP acties te beïnvloeden.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sky Roleplay | Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
